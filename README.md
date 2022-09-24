@@ -2,7 +2,7 @@
 
 # Knowledge Graph Powered Search Accelerator
 
-This accelerator provides the code template to implement a domain-aware search solution that uses knowledge graph (KG) to enrich the organic results of a general purpose search engine. The use of the accelerator is demonstrated through an example implementation of a medical document retrieval solution. The example implementation uses a knowledge graph to expand the scope of search from the original query to semantically related queries to uncover documents that are relevant to the original query but may not contain the exact keywords. 
+This accelerator provides the code template to implement a domain-aware search solution that uses knowledge graph (KG) to enrich the organic results of a general purpose search engine. The use of the accelerator is demonstrated through an example implementation of a aircraft troubleshooting scenario. The example implementation uses a knowledge graph to expand the scope of search from the original query to semantically related queries to uncover documents that are relevant to the original query but may not contain the exact keywords. 
 
  <!-- the original query.  to uses a medical knowledge graph to expand search perform search across the well-known [OHSUMED](https://link.springer.com/chapter/10.1007/978-1-4471-2099-5_20) medical dataset.  -->
 
@@ -23,12 +23,12 @@ The code template provided by this solution acceleration is applicable to both s
 
 ## An Example KG-Powered Search Scenario
 
-To demonstrate the use of the solution accelerator, this repo provides an example of using knowledge graph for search expansion in the context of medical document retrieval. 
+To demonstrate the use of the solution accelerator, this repo provides an example of using knowledge graph for search expansion in the context of aircraft maintenance. 
 
-An example knowledge graph is created based on [Unified Medical Language System (UMLS)](https://www.nlm.nih.gov/research/umls/index.html), which is a set of files and software that brings together health and biomedical vocabularies and standards to enable interoperability between computer systems. We create an example knowledge graph based on an [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)) as shown below to capture the relationships between various [keratoconus](https://www.hopkinsmedicine.org/health/conditions-and-diseases/keratoconus)-related diseases and their corresponding treatments. 
+<!-- An example knowledge graph is created based on [Unified Medical Language System (UMLS)](https://www.nlm.nih.gov/research/umls/index.html), which is a set of files and software that brings together health and biomedical vocabularies and standards to enable interoperability between computer systems. We create an example knowledge graph based on an [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)) as shown below to capture the relationships between various [keratoconus](https://www.hopkinsmedicine.org/health/conditions-and-diseases/keratoconus)-related diseases and their corresponding treatments. 
 ![img](docs/media/sample_kg.PNG)
 
-In a medical document retrieval scenario, parent (hypernym) and children (hyponyms) of a disease are considered to be highly related, hence are natural candidates for search expansion. The example search engine is therefore designed to automatically expand a disease term in the original query to related parent and children diseases. For example, the search engine will expand "keratoconus" to its parent and children diseases: "protrusion", "corneal disease", "corneal ectasia", "stable condition keratoconus", and "acute hydrops keratoconus". 
+In a medical document retrieval scenario, parent (hypernym) and children (hyponyms) of a disease are considered to be highly related, hence are natural candidates for search expansion. The example search engine is therefore designed to automatically expand a disease term in the original query to related parent and children diseases. For example, the search engine will expand "keratoconus" to its parent and children diseases: "protrusion", "corneal disease", "corneal ectasia", "stable condition keratoconus", and "acute hydrops keratoconus". -->
 
 # Solution Design
 
