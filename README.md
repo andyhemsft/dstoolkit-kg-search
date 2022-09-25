@@ -1,8 +1,9 @@
-![image](https://user-images.githubusercontent.com/64599697/185288661-6d7d823f-d244-41df-9ff9-4458a8887197.png)
+<!--![image](https://user-images.githubusercontent.com/64599697/185288661-6d7d823f-d244-41df-9ff9-4458a8887197.png)-->
 
-# Knowledge Graph Powered Search Accelerator
+# Coeus for Intelligent Search: Query beyond the obvious!
 
-This accelerator provides the code template to implement a domain-aware search solution that uses knowledge graph (KG) to enrich the organic results of a general purpose search engine. The use of the accelerator is demonstrated through an example implementation of a aircraft troubleshooting scenario. The example implementation uses a knowledge graph to expand the scope of search from the original query to semantically related queries to uncover documents that are relevant to the original query but may not contain the exact keywords. 
+Coeus is a search addon with embedded knowledge of your organisation. It uses the search query to traverse an organisational knowledge graph, discovering latent relations to different type of entities that may not been explicitly asked for. 
+This repository provides the code template to implement Coeus, a domain-aware search solution that uses knowledge graph (KG) to enrich the organic results of a general purpose search engine. The use of the repository is demonstrated through an example implementation of a aircraft troubleshooting scenario. The example implementation uses a knowledge graph to expand the scope of search from the original query to semantically related queries to uncover documents that are relevant to the original query but may not contain the exact keywords. 
 
  <!-- the original query.  to uses a medical knowledge graph to expand search perform search across the well-known [OHSUMED](https://link.springer.com/chapter/10.1007/978-1-4471-2099-5_20) medical dataset.  -->
 
@@ -23,10 +24,18 @@ The code template provided by this solution acceleration is applicable to both s
 
 ## An Example KG-Powered Search Scenario
 
-To demonstrate the use of the solution accelerator, this repo provides an example of using knowledge graph for search expansion in the context of aircraft maintenance. 
+To demonstrate the use of the solution accelerator, this repo provides an example of using knowledge graph for search expansion in the context of aircraft maintenance. For example, let's take John Doe, John is an aircraft maintenance engineer. John is tasked to troubleshoot an air conditioning defect on aircraft VH-ACX. John knows this aircraft is of type B200C, manufactured by King Air in 2010, and is stationed in Melbourne. 
+On a typical day, he first queries the maintenance logs of the aircraft, to find if there were previous records of air conditioning defects on this aircraft. Then he reviews the service bulletin database by King Air, looking for known air conditioning defects or other related updates from the manufacturer. John also needs to review the maintenance manual of the air conditioning system and talk to other engineers that might have experience in similar air conditioning defects
+
+The challenge here is that these knowledge are in someone else' head if we dont record it in any system and John need to communicate with different people and jump over multiple systems before getting the answer. 
+By capturing all these domain knowledge in knowledge graph, Coeus can automically traverse the graph and found out the exact answer to John's query. 
+In this paricular example, there is no past maintenance record found for VH-ACH. Based on the knowledge graph, however, it finds a similar aircraft VH-CFK. In the maintenance logs of VH-CFK, it finds a record of air conditioning system defect, this defect was caused by a sensor failure which was easily identifiable by using a troubleshooting software introduced in the King Air service bulletin published in May 2015. Here is the illustrate of the graph traversal:
+![kg_travesal_v2](https://user-images.githubusercontent.com/64599697/192149993-691197e8-28f7-4c7a-98b1-ae1cbac3b91f.gif)
 
 <!-- An example knowledge graph is created based on [Unified Medical Language System (UMLS)](https://www.nlm.nih.gov/research/umls/index.html), which is a set of files and software that brings together health and biomedical vocabularies and standards to enable interoperability between computer systems. We create an example knowledge graph based on an [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)) as shown below to capture the relationships between various [keratoconus](https://www.hopkinsmedicine.org/health/conditions-and-diseases/keratoconus)-related diseases and their corresponding treatments. 
 ![img](docs/media/sample_kg.PNG)
+
+
 
 In a medical document retrieval scenario, parent (hypernym) and children (hyponyms) of a disease are considered to be highly related, hence are natural candidates for search expansion. The example search engine is therefore designed to automatically expand a disease term in the original query to related parent and children diseases. For example, the search engine will expand "keratoconus" to its parent and children diseases: "protrusion", "corneal disease", "corneal ectasia", "stable condition keratoconus", and "acute hydrops keratoconus". -->
 
