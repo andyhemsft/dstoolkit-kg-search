@@ -214,8 +214,10 @@ In Visual Code, you can now continue the deploy step by following this [link](ht
         ```
         flask run --host=0.0.0.0 --port=5001
         ```
-    * You can now visit the front-end application at http://127.0.0.1:5001. Type in a query such as "keratoconus treatment", then click the "Search" button to search. You can toggle "KG Enabled" option on and off to compare the results with and without KG augmentation. You are likely to see more results with the "KG Enabled" option on if your query contains a disease term that is present in the example keratoconus KG. In that case the search is expanded from the original query to a query containing all the related diseases. 
-    ![img](docs/media/expansion.png)
+    * You can now visit the front-end application at http://127.0.0.1:5001. Type in a query such as "VH-ACX air conditioning cockpit blower on and off", then click the "Search" button to search. You can toggle "KG Enabled" option on and off to compare the results with and without KG augmentation. 
+    
+    <!-- You are likely to see more results with the "KG Enabled" option on if your query contains a disease term that is present in the example keratoconus KG. In that case the search is expanded from the original query to a query containing all the related diseases. 
+    ![img](docs/media/expansion.png) -->
 
     **Azure deployment**: 
     1. Deploy the KG Search API. We recommend to use VS Code to deploy the App Service. You need to install [Azure Tools extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) and sign into Azure from VS code. Once install the extension, select the Azure Tools icon. Then, right click on "App Services" and choose "Create New Web App.. (Advanced)". It will ask you to input the app service name, resource group, App Service Plan etc. Once you provide all the information, the app service will be automatically created and shown as a new item under "App Services". 
