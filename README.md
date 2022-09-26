@@ -30,7 +30,8 @@ On a typical day, he first queries the maintenance logs of the aircraft, to find
 The challenge here is that these knowledge are in someone else' head if we dont record it in any system and John need to communicate with different people and jump over multiple systems before getting the answer. 
 By capturing all these domain knowledge in knowledge graph, Coeus can automically traverse the graph and found out the exact answer to John's query. 
 In this paricular example, there is no past maintenance record found for VH-ACX. Based on the knowledge graph, however, it finds a similar aircraft VH-CFK. In the maintenance logs of VH-CFK, it finds a record of air conditioning system defect, this defect was caused by a sensor failure which was easily identifiable by using a troubleshooting software introduced in the King Air service bulletin published in May 2015. Here is the illustrate of the graph traversal:
-![kg_travesal_v2](https://user-images.githubusercontent.com/64599697/192149993-691197e8-28f7-4c7a-98b1-ae1cbac3b91f.gif)
+
+<p align="center"><img src="docs/media/kg_traversal.gif"></p>
 
 <!-- An example knowledge graph is created based on [Unified Medical Language System (UMLS)](https://www.nlm.nih.gov/research/umls/index.html), which is a set of files and software that brings together health and biomedical vocabularies and standards to enable interoperability between computer systems. We create an example knowledge graph based on an [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)) as shown below to capture the relationships between various [keratoconus](https://www.hopkinsmedicine.org/health/conditions-and-diseases/keratoconus)-related diseases and their corresponding treatments. 
 ![img](docs/media/sample_kg.PNG)
