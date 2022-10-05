@@ -7,9 +7,9 @@ This repository provides the code template to implement Coeus, a domain-aware se
 
  <!-- the original query.  to uses a medical knowledge graph to expand search perform search across the well-known [OHSUMED](https://link.springer.com/chapter/10.1007/978-1-4471-2099-5_20) medical dataset.  -->
 
-<p align="center"><img src="docs/media/animation.gif"></p>
+<!-- <p align="center"><img src="docs/media/animation.gif"></p> -->
 
-
+https://user-images.githubusercontent.com/64599697/193973267-e8296746-d027-4e5a-9c7c-8993f021cdc6.mp4
 
 ## Knowledge Graph to Enhance Search Results
 
