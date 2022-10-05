@@ -5,6 +5,8 @@
 Coeus is a search addon with embedded knowledge of your organisation. It uses the search query to traverse an organisational knowledge graph, discovering latent relations to different type of entities that may not been explicitly asked for. 
 This repository provides the code template to implement Coeus, a domain-aware search solution that uses knowledge graph (KG) to enrich the organic results of a general purpose search engine. The use of the repository is demonstrated through an example implementation of a aircraft troubleshooting scenario. The example implementation uses a knowledge graph to expand the scope of search from the original query to semantically related queries to uncover documents that are relevant to the original query but may not contain the exact keywords. 
 
+Watch the below video to understand more:
+
  <!-- the original query.  to uses a medical knowledge graph to expand search perform search across the well-known [OHSUMED](https://link.springer.com/chapter/10.1007/978-1-4471-2099-5_20) medical dataset.  -->
 
 <!-- <p align="center"><img src="docs/media/animation.gif"></p> -->
